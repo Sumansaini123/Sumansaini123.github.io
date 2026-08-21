@@ -535,6 +535,133 @@ section{
     }
 
 }
+
+/* ================= AI TOOLS ================= */
+
+.ai-section{
+    padding:100px 0;
+    background:#080808;
+}
+
+.ai-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.ai-card{
+    position:relative;
+    display:flex;
+    gap:18px;
+    padding:26px;
+    background:#111;
+    border:1px solid #272727;
+    border-radius:15px;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.ai-card:hover{
+    transform:translateY(-6px);
+    border-color:#d4af37;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+
+/* AI ICON */
+
+.ai-icon{
+    flex-shrink:0;
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:rgba(212,175,55,.08);
+    border:1px solid rgba(212,175,55,.3);
+
+    color:#d4af37;
+
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+
+/* CONTENT */
+
+.ai-content{
+    flex:1;
+}
+
+.ai-content h3{
+    color:#fff;
+    font-size:19px;
+    margin-bottom:7px;
+}
+
+.ai-content p{
+    color:#858585;
+    font-size:13px;
+    line-height:1.6;
+    margin-bottom:13px;
+}
+
+
+/* TAG */
+
+.ai-tag{
+    display:inline-block;
+
+    padding:5px 9px;
+
+    border-radius:5px;
+
+    background:#191919;
+    border:1px solid #292929;
+
+    color:#d4af37;
+
+    font-size:10px;
+    font-weight:700;
+
+    text-transform:uppercase;
+    letter-spacing:.7px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .ai-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:550px){
+
+    .ai-section{
+        padding:70px 0;
+    }
+
+    .ai-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ai-card{
+        padding:22px;
+    }
+
+}    
 /* ================= PROJECT EXPERIENCE HIGHLIGHT ================= */
 
 .experience-highlight{
@@ -1311,7 +1438,145 @@ footer{
 
 </section>
 
+<!-- AI TOOLS & DEVELOPMENT -->
 
+<section id="ai-tools" class="ai-section">
+
+    <div class="container">
+
+        <div class="section-head">
+            <div class="section-label">AI & Productivity</div>
+
+            <h2>AI Tools & Development</h2>
+
+            <p>
+                Using modern AI tools to accelerate development,
+                debugging, research, problem-solving and productivity.
+            </p>
+        </div>
+
+
+        <div class="ai-grid">
+
+            <!-- ChatGPT -->
+            <div class="ai-card">
+
+                <div class="ai-icon">AI</div>
+
+                <div class="ai-content">
+                    <h3>ChatGPT</h3>
+
+                    <p>
+                        AI-assisted development, debugging,
+                        problem-solving, technical research
+                        and content workflows.
+                    </p>
+
+                    <span class="ai-tag">AI Assistant</span>
+                </div>
+
+            </div>
+
+
+            <!-- Codex -->
+            <div class="ai-card">
+
+                <div class="ai-icon">CX</div>
+
+                <div class="ai-content">
+                    <h3>OpenAI Codex</h3>
+
+                    <p>
+                        Code generation, development assistance,
+                        code understanding and automation workflows.
+                    </p>
+
+                    <span class="ai-tag">AI Coding</span>
+                </div>
+
+            </div>
+
+
+            <!-- Cursor -->
+            <div class="ai-card">
+
+                <div class="ai-icon">CU</div>
+
+                <div class="ai-content">
+                    <h3>Cursor</h3>
+
+                    <p>
+                        AI-powered coding, codebase assistance,
+                        refactoring and development workflows.
+                    </p>
+
+                    <span class="ai-tag">AI IDE</span>
+                </div>
+
+            </div>
+
+
+            <!-- GitHub Copilot -->
+            <div class="ai-card">
+
+                <div class="ai-icon">CP</div>
+
+                <div class="ai-content">
+                    <h3>GitHub Copilot</h3>
+
+                    <p>
+                        AI-powered code completion, coding
+                        assistance and developer productivity.
+                    </p>
+
+                    <span class="ai-tag">Code Assistant</span>
+                </div>
+
+            </div>
+
+
+            <!-- Gemini -->
+            <div class="ai-card">
+
+                <div class="ai-icon">GE</div>
+
+                <div class="ai-content">
+                    <h3>Google Gemini</h3>
+
+                    <p>
+                        AI-assisted research, coding,
+                        analysis and content-related workflows.
+                    </p>
+
+                    <span class="ai-tag">Generative AI</span>
+                </div>
+
+            </div>
+
+
+            <!-- Lovable -->
+            <div class="ai-card">
+
+                <div class="ai-icon">LO</div>
+
+                <div class="ai-content">
+                    <h3>Lovable</h3>
+
+                    <p>
+                        Rapid prototyping, UI development and
+                        AI-assisted application building.
+                    </p>
+
+                    <span class="ai-tag">Rapid Development</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <!-- EXPERIENCE -->
 
 <section id="experience">
