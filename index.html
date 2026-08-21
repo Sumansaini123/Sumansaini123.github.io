@@ -696,28 +696,46 @@ section{
     border:1px solid #292929;
 }
 
-.featured-image{
-    min-height:340px;
+.featured{
+    position:relative;
+    min-height:480px;
+    overflow:hidden;
+    border-radius:18px;
+}
 
-    background:
-        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.55)),
-        url("https://rajasthanbudgettours.in/");
-    
-    background-size:cover;
-    background-position:center;
-    
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.featured-image{
+    position:absolute;
+    inset:0;
+}
+
+.featured-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .featured-image::after{
-    content:"RAJASTHAN BUDGET TOURS";
-    color:#d4af37;
-    font-size:22px;
-    font-weight:800;
-    letter-spacing:2px;
-    text-align:center;
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.95) 0%,
+            rgba(0,0,0,.72) 42%,
+            rgba(0,0,0,.15) 100%
+        );
+}
+
+.featured-content{
+    position:relative;
+    z-index:2;
+    width:55%;
+    min-height:480px;
+    padding:55px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .featured-content{
@@ -792,7 +810,38 @@ section{
     font-weight:800;
     letter-spacing:1px;
 }
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+    .project-image{
+    position:relative;
+    overflow:hidden;
+}
 
+.project-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.9) 0%,
+        rgba(0,0,0,.35) 55%,
+        rgba(0,0,0,.05) 100%
+    );
+    z-index:1;
+}
+
+.project-overlay{
+    position:absolute;
+    left:25px;
+    right:25px;
+    bottom:22px;
+    z-index:2;
+    color:#fff;
+}
 .project-body{
     padding:24px;
 }
