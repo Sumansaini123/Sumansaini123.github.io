@@ -427,7 +427,114 @@ section{
 .about-box strong{
     color:#d4af37;
 }
+/* ================= AT A GLANCE ================= */
 
+.glance-section{
+    padding:70px 0 80px;
+    background:#0a0a0a;
+}
+
+.glance-heading{
+    text-align:center;
+    margin-bottom:38px;
+}
+
+.glance-heading h2{
+    font-size:38px;
+    color:#fff;
+    margin-top:5px;
+    letter-spacing:-1px;
+}
+
+.glance-heading p{
+    color:#777;
+    margin-top:8px;
+}
+
+.glance-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.glance-card{
+    position:relative;
+    text-align:center;
+    padding:30px 20px;
+    background:#111;
+    border:1px solid #252525;
+    border-radius:14px;
+    transition:.3s ease;
+}
+
+.glance-card:hover{
+    transform:translateY(-6px);
+    border-color:#d4af37;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.glance-number{
+    color:#d4af37;
+    font-size:38px;
+    font-weight:800;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+.glance-title{
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:3px;
+}
+
+.glance-text{
+    color:#777;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+@media(max-width:850px){
+
+    .glance-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:550px){
+
+    .glance-section{
+        padding:55px 0;
+    }
+
+    .glance-heading h2{
+        font-size:30px;
+    }
+
+    .glance-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .glance-card{
+        padding:24px 10px;
+    }
+
+    .glance-number{
+        font-size:30px;
+    }
+
+    .glance-title{
+        font-size:15px;
+    }
+
+    .glance-text{
+        font-size:10px;
+    }
+
+}
 /* ================= PROJECT EXPERIENCE HIGHLIGHT ================= */
 
 .experience-highlight{
@@ -926,7 +1033,54 @@ footer{
 </div>
 
 </section>
+<!-- AT A GLANCE -->
 
+<section class="glance-section">
+
+    <div class="container">
+
+        <div class="glance-heading">
+            <div class="section-label">At a Glance</div>
+
+            <h2>Experience & Expertise</h2>
+
+            <p>
+                A quick overview of my development experience
+                and project expertise.
+            </p>
+        </div>
+
+        <div class="glance-grid">
+
+            <div class="glance-card">
+                <div class="glance-number">80+</div>
+                <div class="glance-title">WordPress</div>
+                <div class="glance-text">Projects Completed</div>
+            </div>
+
+            <div class="glance-card">
+                <div class="glance-number">6+</div>
+                <div class="glance-title">Shopify</div>
+                <div class="glance-text">Projects Completed</div>
+            </div>
+
+            <div class="glance-card">
+                <div class="glance-number">2+</div>
+                <div class="glance-title">Laravel</div>
+                <div class="glance-text">Projects Completed</div>
+            </div>
+
+            <div class="glance-card">
+                <div class="glance-number">9+</div>
+                <div class="glance-title">Years</div>
+                <div class="glance-text">Development Experience</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ABOUT -->
 
